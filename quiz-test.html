@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Ben's Quiz !</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="Javascript/main.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="http://www.bonjourdefrance.com/image/user_upload/3/musique-icon-bdf32.png">
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Shrikhand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<audio autoplay>
+			<source src="./debussy.mp3" type="audio/mpeg"/>
+		</audio>
+		<h1 class="lightSpeedIn animated">-- Welcome to my Buzz Quizz --</h1>
+		<h2 class="lightSpeedIn animated">"are you passionate about classical music"</h2>
+		<button class="lightSpeedIn animated myButton" onclick="myFunction()">Click here to start the quiz</button>
+		
+		<form id="quiz" class="hide" name="quiz">
+			<div class="question lightSpeedIn animated">
+			  	<p >1. Which composer has composed "Nutcracker" ?</p>
+
+				    <input type= "radio" id="mc" name="question1" value="Piotr Ilitch Tchaikovski"> Piotr Ilitch Tchaikovski<br>
+				    <input type= "radio" id="mc" name="question1" value="Serguei Vassilievitch Rachmaninov"> Serguei Vassilievitch Rachmaninov<br>
+				    <input type= "radio" id="mc" name="question1" value="Serge Gainsbourg"> Serge Gainsbourg<br>
+				    <input type= "radio" id="mc" name="question1" value="John lennon"> John Lennon<br>
+			   	
+			 
+
+			 
+			   	<p>2. Which composer has composed "Ode To Joy" ?</p>
+
+				    <input type= "radio" id="mc" name="question2" value="Ludwig Van Beethoven"> Ludwig Van Beethoven<br>
+				    <input type= "radio" id="mc" name="question2" value="Frederic Chopin"> Frederic Chopin<br>
+				    <input type= "radio" id="mc" name="question2" value="Steven Spielberg"> Steven Spielberg<br>
+				    <input type= "radio" id="mc" name="question2" value="It's a movie"> It's a movie<br>
+		 	
+
+			 
+			   	<p>3. In which country was born Wolfgang Amadeus Mozart ?</p>
+
+			    	<input type= "text" id="textbox" name="question3">
+			   	
+			 
+			   	<p>4. In what year the French composer Claude debussy passed away ?</p>
+
+				    <input type= "radio" id="mc" name="question4" value="1918"> 1918<br>
+				    <input type= "radio" id="mc" name="question4" value="1930"> 1930<br>
+				    <input type= "radio" id="mc" name="question4" value="1945"> 1945<br>
+				    <input type= "radio" id="mc" name="question4" value="2002"> 2002<br>
+			 	
+			            
+			   	<p>5. Nowadays, how many keys do we use to play music ?</p>
+
+			    	<input type= "number" id="numberbox" name="question5">
+			    	<input class="myButton2" id="button" type="button" value="Test Yourself" onclick="check();">
+			</div>   	  
+		</form>
+		<div id="after_submit">
+			<p id="number_correct"></p>
+			<p id="message"></p>
+			<img id="picture">
+		</div>
+	</body>
+</html>	
